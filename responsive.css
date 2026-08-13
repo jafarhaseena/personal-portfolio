@@ -1,0 +1,288 @@
+/* =========================================================
+   RESPONSIVE STYLESHEET
+   Breakpoints: 1200px (large tablet/small desktop), 992px, 768px, 480px
+   ========================================================= */
+
+/* ---------- Large screens: shrink sidebar spacing slightly ---------- */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-container {
+    gap: 24px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Tablet (≤ 992px) ---------- */
+@media (max-width: 992px) {
+  .side-socials {
+    display: none;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image-ring {
+    width: min(300px, 70%);
+  }
+
+  .badge-1,
+  .badge-2 {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-frame {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .about-mini-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-admin-area {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .portfolio-toolbar {
+    align-items: stretch;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 74px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(320px, 80%);
+    height: 100vh;
+    background: var(--color-white);
+    box-shadow: -10px 0 40px rgba(18, 18, 18, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right var(--transition-mid);
+    z-index: 940;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-name {
+    letter-spacing: -0.5px;
+  }
+
+  .about-mini-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-toolbar,
+  .portfolio-filter-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .portfolio-search,
+  .portfolio-filter-group select,
+  .project-counter {
+    max-width: none;
+    width: 100%;
+  }
+
+  #projectForm .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 28px 22px;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-dot {
+    left: -31px;
+  }
+
+  .modal-body {
+    padding: 22px;
+  }
+
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* ---------- Small mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-mini-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .mini-card {
+    padding: 16px 8px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .testimonial-card {
+    padding: 32px 22px;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jafarullah Jafarul Haseena — Networking Undergraduate, University of Vavuniya. Portfolio of web, networking and design work." />
+  <title>Jafarullah Jafarul Haseena | Networking Student &amp; Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-bracket">&lt;</span>
+      <span class="loader-text">JJH</span>
+      <span class="loader-bracket">/&gt;</span>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ===================== SIDEBAR SOCIAL ICONS (Desktop fixed) ===================== -->
+  <aside class="side-socials">
+    <span class="side-line"></span>
+    <a href="https://github.com/jafarhaseena" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jafarullah-jafarul-haseena-833005333/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/jafar_hazz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1XKkqBsVLu/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <span class="side-line"></span>
+  </aside>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Jafar<span>ullah.</span></a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+          <li><a href="#resume" class="nav-link" data-nav="resume">Resume</a></li>
+          <li><a href="#portfolio" class="nav-link" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Enable dark mode" aria-pressed="false">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HOME / HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape dot-grid"></span>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="hero-greeting fade-up">Hello! <span class="wave">👋</span></p>
+          <h1 class="hero-name fade-up" style="--delay:0.1s">I'm <span class="highlight">Jafarullah Jafarul Haseena</span></h1>
+          <h2 class="hero-role fade-up" style="--delay:0.2s">
+            <span id="typedText"></span><span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-desc fade-up" style="--delay:0.3s">
+            I'm a Networking undergraduate from the University of Vavuniya. I enjoy Web Development,
+            Networking, UI Design and building modern web applications. I love learning new
+            technologies and creating beautiful user experiences.
+          </p>
+          <div class="hero-buttons fade-up" style="--delay:0.4s">
+            <a href="public/resume.pdf" download class="btn btn-primary ripple">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline ripple">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image fade-up" style="--delay:0.2s">
+          <div class="hero-image-ring">
+            <img src="public/profile.png" alt="Portrait of Jafarullah Jafarul Haseena" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23f4b400%22/%3E%3Ctext x=%2250%25%22 y=%2255%25%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23111%22 font-family=%22sans-serif%22%3EJJH%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <span class="badge-float badge-1"><i class="fa-solid fa-network-wired"></i> Networking</span>
+          <span class="badge-float badge-2"><i class="fa-solid fa-code"></i> Web Dev</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <p class="section-eyebrow reveal">About Me</p>
+        <h2 class="section-title reveal">Get To Know Me</h2>
+
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-image-frame">
+              <img src="public/profile.png" alt="Jafarullah Jafarul Haseena working" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 480%22%3E%3Crect width=%22400%22 height=%22480%22 fill=%22%23eee%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2228%22 text-anchor=%22middle%22 fill=%22%23888%22 font-family=%22sans-serif%22%3EProfile Photo%3C/text%3E%3C/svg%3E'" />
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <h3>Networking Student, University of Vavuniya</h3>
+            <p>
+              I'm currently pursuing my undergraduate degree in Networking at the University of
+              Vavuniya. Alongside my studies, I've developed a strong passion for web development
+              and UI design — combining infrastructure thinking with front-end craft to build
+              applications that are fast, reliable and pleasant to use.
+            </p>
+
+            <div class="about-education">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h4>University of Vavuniya</h4>
+                <span>Networking Undergraduate</span>
+              </div>
+            </div>
+
+            <div class="about-mini-cards">
+              <div class="mini-card">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h5 class="counter" data-target="12">0</h5>
+                <span>Projects</span>
+              </div>
+              <div class="mini-card">
+                <i class="fa-solid fa-star"></i>
+                <h5 class="counter" data-target="6">0</h5>
+                <span>Skills</span>
+              </div>
+              <div class="mini-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h5 class="counter" data-target="2">0</h5>
+                <span>Experience</span>
+              </div>
+              <div class="mini-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h5 class="counter" data-target="1">0</h5>
+                <span>Education</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-bars reveal">
+          <h3 class="skill-bars-title">Core Skills</h3>
+
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>HTML</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>CSS</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Networking</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="88"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-label"><span>Responsive Design</span><span class="skill-percent">82%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="82"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section class="resume section section-grey" id="resume">
+      <div class="container">
+        <p class="section-eyebrow reveal">Resume</p>
+        <h2 class="section-title reveal">My Journey So Far</h2>
+
+        <div class="timeline-grid">
+          <div class="timeline-col reveal">
+            <h3 class="timeline-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Present</span>
+                <h4>University of Vavuniya</h4>
+                <p>BSc. (Hons) in Networking — coursework covering network infrastructure,
+                  protocols, security fundamentals and systems administration.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Earlier</span>
+                <h4>Advanced Level — Physical Science</h4>
+                <p>Foundation studies leading into a Networking undergraduate program.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-col reveal">
+            <h3 class="timeline-heading"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Ongoing</span>
+                <h4>Freelance Web Developer</h4>
+                <p>Designing and building responsive websites and UI components for small
+                  projects and personal clients.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-date">Placeholder</span>
+                <h4>Networking Internship</h4>
+                <p>Hands-on exposure to network configuration, troubleshooting and IT support
+                  workflows. <em>(Add your internship details here.)</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements reveal">
+          <h3 class="timeline-heading"><i class="fa-solid fa-trophy"></i> Achievements</h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <i class="fa-solid fa-award"></i>
+              <p>Consistent academic performance in Networking coursework</p>
+            </div>
+            <div class="achievement-card">
+              <i class="fa-solid fa-laptop-code"></i>
+              <p>Self-taught front-end developer, building projects outside coursework</p>
+            </div>
+            <div class="achievement-card">
+              <i class="fa-solid fa-users"></i>
+              <p>Active in university tech &amp; networking community activities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-download reveal">
+          <a href="public/resume.pdf" download class="btn btn-primary ripple">
+            <i class="fa-solid fa-download"></i> Download Full Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="portfolio-header reveal">
+          <div>
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+
+          <div class="portfolio-admin-area">
+            <button class="portfolio-admin-btn" id="adminLoginBtn" type="button">Admin Login</button>
+
+            <div class="admin-panel hidden" id="adminPanel">
+              <button class="admin-panel-btn ripple" type="button" data-admin-action="add">
+                <i class="fa-solid fa-plus"></i> Add Project
+              </button>
+              <button class="admin-panel-btn ripple" type="button" data-admin-action="edit">
+                <i class="fa-solid fa-pen"></i> Edit Project
+              </button>
+              <button class="admin-panel-btn ripple" type="button" data-admin-action="delete">
+                <i class="fa-solid fa-trash"></i> Delete Project
+              </button>
+              <button class="admin-panel-btn admin-panel-logout ripple" type="button" data-admin-action="logout">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-toolbar reveal" id="portfolioToolbar">
+          <div class="portfolio-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="projectSearch" placeholder="Search projects..." aria-label="Search projects" />
+          </div>
+
+          <div class="portfolio-filter-group">
+            <select id="projectCategoryFilter" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+            </select>
+            <select id="projectSort" aria-label="Sort projects">
+              <option value="display">Display Order</option>
+              <option value="featured">Featured First</option>
+              <option value="name">Name A–Z</option>
+              <option value="newest">Newest First</option>
+            </select>
+          </div>
+
+          <span class="project-counter" id="projectCounter">0 Projects</span>
+        </div>
+
+        <div class="portfolio-grid reveal" id="portfolioGrid" aria-live="polite"></div>
+
+        <div class="portfolio-empty-state reveal" id="portfolioEmptyState">
+          <div class="empty-illustration" aria-hidden="true">
+            <div class="empty-window"></div>
+            <div class="empty-rocket"></div>
+            <div class="empty-dot dot-one"></div>
+            <div class="empty-dot dot-two"></div>
+          </div>
+          <h3>No Projects Available Yet</h3>
+          <p>New portfolio work will appear here as soon as it is added.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="app-modal-overlay" id="adminLoginModal" aria-hidden="true">
+      <div class="app-modal-box" id="adminLoginBox">
+        <button class="modal-close" type="button" data-close-modal="adminLoginModal" aria-label="Close login modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="app-modal-header">
+          <span class="app-modal-badge">Secure Access</span>
+          <h3>Admin Login</h3>
+        </div>
+
+        <form id="adminLoginForm" novalidate>
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input id="adminPassword" name="password" type="password" placeholder="Enter password" required />
+          </div>
+          <p class="form-error" id="adminLoginError" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary ripple full-width">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="app-modal-overlay" id="projectModal" aria-hidden="true">
+      <div class="app-modal-box project-modal-box">
+        <button class="modal-close" type="button" data-close-modal="projectModal" aria-label="Close project form">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="app-modal-header">
+          <span class="app-modal-badge">Portfolio Manager</span>
+          <h3 id="projectModalTitle">Add Project</h3>
+        </div>
+
+        <form id="projectForm" novalidate>
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="projectName">Project Name</label>
+              <input id="projectName" name="projectName" type="text" placeholder="My Project" required />
+            </div>
+            <div class="form-group">
+              <label for="projectCategory">Project Category</label>
+              <input id="projectCategory" name="projectCategory" type="text" placeholder="Web Design" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="projectDescription">Project Description</label>
+            <textarea id="projectDescription" name="projectDescription" rows="4" maxlength="300" placeholder="Describe the project..." required></textarea>
+            <div class="char-counter"><span id="descriptionCounter">0</span>/300</div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="projectGithub">Project GitHub Link</label>
+              <input id="projectGithub" name="projectGithub" type="url" placeholder="https://github.com/your-repo" required />
+            </div>
+            <div class="form-group">
+              <label for="projectDemo">Live Demo Link (Optional)</label>
+              <input id="projectDemo" name="projectDemo" type="url" placeholder="https://example.com" />
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="projectTechnologies">Technologies Used</label>
+              <input id="projectTechnologies" name="projectTechnologies" type="text" placeholder="HTML, CSS, JavaScript" required />
+            </div>
+            <div class="form-group">
+              <label for="projectOrder">Display Order</label>
+              <input id="projectOrder" name="projectOrder" type="number" min="1" step="1" value="1" required />
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="projectStatus">Project Status</label>
+              <select id="projectStatus" name="projectStatus">
+                <option value="Published">Published</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Draft">Draft</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="projectFeatured">Featured</label>
+              <select id="projectFeatured" name="projectFeatured">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Project Image</label>
+            <div class="image-drop-zone" id="imageDropZone">
+              <input id="projectImage" type="file" accept="image/*" hidden />
+              <label class="image-upload-label" for="projectImage">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>Choose image or drag and drop</span>
+              </label>
+              <img id="projectImagePreview" alt="Project preview" />
+            </div>
+          </div>
+
+          <div class="modal-actions project-form-actions">
+            <button type="submit" class="btn btn-primary ripple">Save Project</button>
+            <button type="button" class="btn btn-outline ripple" data-close-modal="projectModal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box">
+        <button class="modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-img">
+          <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-body">
+          <span class="portfolio-tag" id="modalTag"></span>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <div class="modal-actions">
+            <a href="#" id="modalGithub" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" id="modalDemo" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills section section-grey" id="skills">
+      <div class="container">
+        <p class="section-eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">What I Work With</h2>
+
+        <div class="skills-grid">
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="90">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-brands fa-html5"></i><b>0%</b></span>
+            </div>
+            <p>HTML</p>
+          </div>
+
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="85">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-brands fa-css3-alt"></i><b>0%</b></span>
+            </div>
+            <p>CSS</p>
+          </div>
+
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="75">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-brands fa-js"></i><b>0%</b></span>
+            </div>
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="88">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-solid fa-network-wired"></i><b>0%</b></span>
+            </div>
+            <p>Networking</p>
+          </div>
+
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="80">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-brands fa-git-alt"></i><b>0%</b></span>
+            </div>
+            <p>Git</p>
+          </div>
+
+          <div class="skill-circle-card reveal">
+            <div class="skill-circle" data-percent="80">
+              <svg viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+                <circle class="circle-fill" cx="60" cy="60" r="52"></circle>
+              </svg>
+              <span class="circle-label"><i class="fa-brands fa-github"></i><b>0%</b></span>
+            </div>
+            <p>Github</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <p class="section-eyebrow reveal">Testimonials</p>
+        <h2 class="section-title reveal">What People Say</h2>
+
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Jafarullah has a great eye for detail and combines his networking background
+                with genuinely clean front-end work. A pleasure to collaborate with."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SN</div>
+                <div>
+                  <h5>Senior Lecturer</h5>
+                  <span>University of Vavuniya</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Reliable, curious and always improving. The websites he built for us were fast,
+                clean and easy to maintain."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RP</div>
+                <div>
+                  <h5>Project Client</h5>
+                  <span>Freelance Web Project</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"A strong grasp of both networking fundamentals and modern web design — a rare
+                and valuable combination."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">KT</div>
+                <div>
+                  <h5>Course Coordinator</h5>
+                  <span>Networking Department</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section section-grey" id="contact">
+      <div class="container">
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's Talk</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h5>Email</h5>
+                <span>jafarhaseena@example.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h5>Phone / WhatsApp</h5>
+                <span>+94 77 929 9696</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h5>Location</h5>
+                <span>Vavuniya, Sri Lanka</span>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/jafarhaseena" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/jafarullah-jafarul-haseena-833005333/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/jafar_hazz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1XKkqBsVLu/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary ripple full-width">
+              <i class="fa-brands fa-whatsapp"></i> Send Message
+            </button>
+            <p class="form-hint">Sending will open WhatsApp with your message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#home" class="logo">Jafar<span>ullah.</span></a>
+      <p>&copy; <span id="year"></span> Jafarullah Jafarul Haseena. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/jafarhaseena" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jafarullah-jafarul-haseena-833005333/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/jafar_hazz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1XKkqBsVLu/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
